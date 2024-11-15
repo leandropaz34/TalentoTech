@@ -1,0 +1,33 @@
+body {
+    font-family: 'Kanit', sans-serif; /* Usamos la fuente importada */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #343a40; /* Color de fondo oscuro */
+    padding: 10px 20px; /* Espacio interno alrededor del contenido */
+    display: flex; /* Usamos flexbox para organizar los elementos */
+    justify-content: space-between; /* Espaciamos los elementos a los lados */
+    align-items: center; /* Centramos verticalmente los elementos */
+    position: sticky; /* Hacemos que el menú se quede fijo al hacer scroll */
+    top: 0; /* Posicionamos el menú en la parte superior */
+    z-index: 1000; /* Aseguramos que el menú esté por encima de otros elementos */
+}
+
+/* Estilos para el logo y el título en el menú */
+.nav_inicio {
+    display: flex; /* Usamos flexbox */
+    align-items: center; /* Centramos verticalmente */
+}
+
+.Logo {
+    max-width: 80px; /* Tamaño máximo del logo */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.Titulo {
+    color: white; /* Color del texto en blanco */
+    font-size: 24px; /* Tamaño del texto */
+    margin: 0; /* Quitamos márgenes */
+}
