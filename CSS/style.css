@@ -16,7 +16,7 @@ nav {
 }
 
 /* Estilo para el contenedor principal del main */
-#main {
+main {
     padding: 20px;  /* Añadimos padding alrededor */
     font-family: 'Cabin', sans-serif;  /* Establecemos la fuente */
     background-color: #f8f9fa;  /* Fondo gris claro */
