@@ -34,14 +34,20 @@ nav {
 
 .titulo_conocenos {
     text-align: center; /* Centramos el texto */
-    margin-top: 40px; /* Espacio superior */
+    font-size: 28px; /* Tamaño de la fuente */
+    color: #343a40; /* Color oscuro para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold; /* Enfatizamos el título */
 
 }
 
 .parrafo_conocenos {
-    text-align: center; /* Centramos el texto */
-    margin-top: 40px; /* Espacio superior */
-
+    font-size: 18px; /* Tamaño de la fuente */
+    line-height: 1.6; /* Aumentamos la altura de línea para mayor legibilidad */
+    color: #495057; /* Color gris oscuro para el texto */
+    text-align: justify; /* Justificamos el texto */
+    margin-bottom: 20px; /* Añadimos un margen inferior para separar los párrafos */
+    text-indent: 20px; /* Añadimos una sangría al comienzo de cada párrafo */
 }
 
 .carousel {
