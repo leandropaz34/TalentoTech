@@ -20,6 +20,7 @@ main {
     padding: 20px;  /* Añadimos padding alrededor */
     font-family: 'Cabin', sans-serif;  /* Establecemos la fuente */
     background-color: #f8f9fa;  /* Fondo gris claro */
+}
 
 .nav_inicio {
     display: flex;
