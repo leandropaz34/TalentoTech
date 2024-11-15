@@ -46,4 +46,20 @@ nav {
 
 .carousel-caption p {
     color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+
+.main_subtitulo {
+    text-align: center; /* Centramos el texto */
+    margin-top: 40px; /* Espacio superior */
+}
+
+.main_cards {
+    display: flex; /* Usamos flexbox */
+    justify-content: space-around; /* Espaciamos las tarjetas uniformemente */
+    flex-wrap: wrap; /* Permitimos que las tarjetas pasen a la siguiente línea si es necesario */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.card {
+    margin: 10px; /* Espacio alrededor de cada tarjeta */
+}
