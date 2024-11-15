@@ -36,7 +36,7 @@ nav {
 }
 
 .carousel-item img {
-    height: 800px;
+    height: 1000px;
 }
 
 .carousel-caption h5 {
@@ -58,7 +58,7 @@ nav {
     display: flex; /* Usamos flexbox */
     justify-content: space-around; /* Espaciamos las tarjetas uniformemente */
     flex-wrap: wrap; /* Permitimos que las tarjetas pasen a la siguiente línea si es necesario */
-    margin-top: 20px; /* Espacio superior */
+    margin-top: 30px; /* Espacio superior */
 }
 
 .card {
