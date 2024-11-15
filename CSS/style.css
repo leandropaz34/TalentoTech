@@ -34,3 +34,16 @@ nav {
 .carousel {
     margin-top: 10px; /* Espacio superior antes del carrusel */
 }
+
+.carousel-item img {
+    height: 700px;
+}
+
+.carousel-caption h5 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
