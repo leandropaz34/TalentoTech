@@ -21,12 +21,22 @@ nav {
 }
 
 .logo {
-    max-width: 80px;
-    margin-right: 10px;
+    max-width: 200px;
+    margin-right: 50px;
 }
 
 .Titulo {
     color: white; /* Color del texto en blanco */
     font-size: 24px; /* Tamaño del texto */
     margin: 0; /* Quitamos márgenes */
+}
+
+.Parrafo {
+    color: white; /* Color del texto en blanco */
+    font-size: 24px; /* Tamaño del texto */
+    margin: 0; /* Quitamos márgenes */
+}
+
+.carousel {
+    margin-top: 20px; /* Espacio superior antes del carrusel */
 }
