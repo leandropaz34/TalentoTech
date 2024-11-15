@@ -1,11 +1,12 @@
 body {
+    background-color: #8d96a0;
     font-family: 'Cabin', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 nav {
-    background-color: #343a40;
+    background-color: #394149;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -19,7 +20,7 @@ nav {
 main {
     padding: 20px;  /* Añadimos padding alrededor */
     font-family: 'Cabin', sans-serif;  /* Establecemos la fuente */
-    background-color: #f8f9fa;  /* Fondo gris claro */
+    background-color: #828e9b;  /* Fondo gris claro */
 }
 
 .nav_inicio {
