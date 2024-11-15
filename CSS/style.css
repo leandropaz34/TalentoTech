@@ -52,7 +52,7 @@ main {
 .parrafo_conocenos {
     font-size: 18px; /* Tamaño de la fuente */
     line-height: 1.6; /* Aumentamos la altura de línea para mayor legibilidad */
-    color: #495057; /* Color gris oscuro para el texto */
+    color: #f1f1f1; /* Color gris oscuro para el texto */
     text-align: justify; /* Justificamos el texto */
     margin-bottom: 20px; /* Añadimos un margen inferior para separar los párrafos */
     text-indent: 20px; /* Añadimos una sangría al comienzo de cada párrafo */
