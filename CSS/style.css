@@ -31,6 +31,18 @@ nav {
     margin: 0; 	/* Quitamos márgenes */
 }
 
+.titulo_conocenos {
+    text-align: center; /* Centramos el texto */
+    margin-top: 40px; /* Espacio superior */
+
+}
+
+.parrafp_conocenos {
+    text-align: center; /* Centramos el texto */
+    margin-top: 40px; /* Espacio superior */
+
+}
+
 .carousel {
     margin-top: 10px; /* Espacio superior antes del carrusel */
 }
