@@ -21,7 +21,7 @@ nav {
     align-items: center; /* Centramos verticalmente */
 }
 
-.Logo {
+.logo {
     max-width: 80px; /* Tamaño máximo del logo */
     margin-right: 10px; /* Espacio entre el logo y el título */
 }
