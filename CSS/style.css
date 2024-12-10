@@ -63,7 +63,7 @@ main {
 }
 
 .carousel-item img {
-    height: 1000px;
+    height: 100%;
 }
 
 .carousel-caption h5 {
