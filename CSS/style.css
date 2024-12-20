@@ -25,6 +25,7 @@ main {
 
 .seccion-contacto {
     padding: 1.25rem;
+    text-align: center; /* Centramos el contenido */
     background-color: #f8f9fa; /* Color de fondo claro */
     min-height:75vh;
     background-position: center;
