@@ -32,7 +32,7 @@ main form h1 {
 }
 
 main input, main textarea {
-    width: 100%; /* Campos ocupan todo el ancho disponible */
+    width: 50%; /* Campos ocupan 50% */
     padding: 10px; /* Espacio interno en los campos */
     margin-bottom: 10px; /* Espacio inferior entre los campos */
     border: 1px solid #ced4da; /* Borde gris claro */
