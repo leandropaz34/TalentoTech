@@ -131,6 +131,13 @@ background-color: rgba(114, 110, 110, 0.5);
     color: #343a40; /* Color oscuro para el título */
     margin-bottom: 20px; /* Espacio debajo del título */
     font-weight: bold; /* Enfatizamos el título */
+	
+.titulo_Contactanos {
+    text-align: center; /* Centramos el texto */
+    font-size: 28px; /* Tamaño de la fuente */
+    color: #343a40; /* Color oscuro para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold; /* Enfatizamos el título */	
 
 }
 
