@@ -23,7 +23,7 @@ main {
     background-color: #828e9b;  /* Fondo gris claro */
 }
 
-.seccion-contacto{
+.seccion-contacto {
     padding: 1.25rem;
     background-color: #f8f9fa; /* Color de fondo claro */
     min-height:75vh;
@@ -139,6 +139,7 @@ background-color: rgba(114, 110, 110, 0.5);
     color: #343a40; /* Color oscuro para el título */
     margin-bottom: 20px; /* Espacio debajo del título */
     font-weight: bold; /* Enfatizamos el título */
+}
 	
 .titulo_contactanos {
     text-align: center; /* Centramos el texto */
