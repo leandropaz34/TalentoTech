@@ -23,6 +23,14 @@ main {
     background-color: #828e9b;  /* Fondo gris claro */
 }
 
+.seccion-contacto{
+    padding: 1.25rem;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    min-height:75vh;
+    background-position: center;
+    background-size: cover;
+}
+
 main form {
     margin-top: 30px; /* Espacio superior antes del formulario */
 }
@@ -32,7 +40,7 @@ main form h1 {
 }
 
 main input, main textarea {
-    width: 50%; /* Campos ocupan 50% */
+    width: 100%;	
     padding: 10px; /* Espacio interno en los campos */
     margin-bottom: 10px; /* Espacio inferior entre los campos */
     border: 1px solid #ced4da; /* Borde gris claro */
