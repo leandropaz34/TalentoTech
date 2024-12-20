@@ -26,7 +26,10 @@ main {
 .nav_inicio {
     display: flex;
     align-items: center;
+    margin-top: 83px;
+    padding: 10px 0;
 }
+
 
 .logo {
     max-width: 200px;
@@ -34,11 +37,64 @@ main {
 }
 
 .Titulo {
-    text-decoration: none;
     color: white; /* Color del texto en blanco */
     font-size: 26px; /* Tamaño del texto */
     margin: 0; 	/* Quitamos márgenes */
 }
+
+.nav_MenuHorizontal {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Posición al inicio de la página */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: black; /* Fondo negro */
+    z-index: 1000; /* Prioridad de visibilidad */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.MenuHorizontal {
+list-style: none;
+display: flex;
+justify-content: space-around;
+
+}
+
+.MenuHorizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: yellow;
+    text-decoration: none;
+}
+
+.MenuHorizontal >li:hover{
+    background-color: gray;
+}
+
+.MenuVertical{
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.MenuHorizontal li:hover .MenuVertical{
+    display: block;
+}
+
+.MenuVertical li:hover{
+background-color: rgba(114, 110, 110, 0.5);
+
+}
+
+.MenuVertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
 
 .titulo_conocenos {
     text-align: center; /* Centramos el texto */
@@ -56,6 +112,30 @@ main {
     text-align: justify; /* Justificamos el texto */
     margin-bottom: 20px; /* Añadimos un margen inferior para separar los párrafos */
     text-indent: 20px; /* Añadimos una sangría al comienzo de cada párrafo */
+}
+
+
+.video-position {   /* Centrado del video */
+  display: flex; /* Usa flexbox para centrar */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin: 20px 0; /* Espaciado opcional */
+}
+
+.video-youtube {
+  position: relative;
+  width: 80%; /* Ajusta el ancho del contenedor */
+  max-width: 800px; /* Tamaño máximo para pantallas grandes */
+  aspect-ratio: 16 / 9; /* Proporción estándar de un video de YouTube */
+}
+
+.video-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Elimina el borde del iframe */
 }
 
 .carousel {
