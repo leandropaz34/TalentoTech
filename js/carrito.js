@@ -39,7 +39,7 @@ if(contenidoCarrito.length>0){
 
 
 }else{
-    //Generar dinamicamente mensaje "tu carrito está vacio 😥"
+    //Generar dinamicamente mensaje "tu carrito está vacio"
     displayCarritoVacio()
 
 }
