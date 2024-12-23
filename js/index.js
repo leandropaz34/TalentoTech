@@ -51,6 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>Precio: $${producto.price || "N/A"}</p>
                 <p>Marca: ${producto.marca || "N/A"}</p>
                 <p>Disponibilidad: ${producto.availability || "N/A"}</p>
+                <p>Localidad: ${producto.branch || "N/A"}</p>
+                <p>Direccion: ${producto.adress || "N/A"}</p>
+                <p>Horario de atencion: ${producto.hours || "N/A"}</p>
                 <p>${producto.description || "Sin descripción disponible."}</p>
             `;
             contenedorProductos.appendChild(productoDiv);
