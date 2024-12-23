@@ -34,31 +34,53 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Función para mostrar productos en el contenedor
-    function mostrarProductos(productos) {
-        contenedorProductos.innerHTML = ""; // Limpiar contenido previo
-        if (productos.length === 0) {
-            contenedorProductos.innerHTML = "<p>No se encontraron productos.</p>";
-            return;
-        }
-        productos.forEach(producto => {
-            const productoDiv = document.createElement("div");
-            productoDiv.classList.add("producto");
-
-            productoDiv.innerHTML = `
-                <img src="${producto.image || 'https://via.placeholder.com/150'}" alt="${producto.name}">
-                <h3>${producto.name}</h3>
-                <p>Año: ${producto.year || "N/A"}</p>
-                <p>Precio: $${producto.price || "N/A"}</p>
-                <p>Marca: ${producto.marca || "N/A"}</p>
-                <p>Disponibilidad: ${producto.availability || "N/A"}</p>
-                <p>Localidad: ${producto.branch || "N/A"}</p>
-                <p>Direccion: ${producto.adress || "N/A"}</p>
-                <p>Horario de atencion: ${producto.hours || "N/A"}</p>
-                <p>${producto.description || "Sin descripción disponible."}</p>
-            `;
-            contenedorProductos.appendChild(productoDiv);
-        });
+function mostrarProductos(productos) {
+    contenedorProductos.innerHTML = ""; // Limpiar contenido previo
+    if (productos.length === 0) {
+        contenedorProductos.innerHTML = "<p>No se encontraron productos.</p>";
+        return;
     }
+    productos.forEach(producto => {
+        const productoDiv = document.createElement("div");
+        productoDiv.classList.add("producto");
+
+        let contenidoHTML = `
+            <img src="${producto.image || 'https://via.placeholder.com/150'}" alt="${producto.name}">
+            <h3>${producto.name}</h3>
+        `;
+
+        // Verificar cada campo y añadir solo si tiene información
+        if (producto.year) {
+            contenidoHTML += `<p>Año: ${producto.year}</p>`;
+        }
+        if (producto.price) {
+            contenidoHTML += `<p>Precio: $${producto.price}</p>`;
+        }
+        if (producto.marca) {
+            contenidoHTML += `<p>Marca: ${producto.marca}</p>`;
+        }
+        if (producto.availability !== undefined) { // Considerar valores booleanos
+            contenidoHTML += `<p>Disponibilidad: ${producto.availability ? "Disponible" : "No disponible"}</p>`;
+        }
+        if (producto.branch) {
+            contenidoHTML += `<p>Localidad: ${producto.branch}</p>`;
+        }
+        if (producto.adress) {
+            contenidoHTML += `<p>Dirección: ${producto.adress}</p>`;
+        }
+        if (producto.hours) {
+            contenidoHTML += `<p>Horario de atención: ${producto.hours}</p>`;
+        }
+        if (producto.description) {
+            contenidoHTML += `<p>${producto.description}</p>`;
+        }
+
+        // Añadir el contenido al contenedor del producto
+        productoDiv.innerHTML = contenidoHTML;
+        contenedorProductos.appendChild(productoDiv);
+    });
+}
+
 
     // Filtrar productos por categoría
     selectorCategorias.addEventListener("change", (e) => {
