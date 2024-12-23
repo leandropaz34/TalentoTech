@@ -75,10 +75,13 @@ function mostrarProductos(productos) {
             contenidoHTML += `<p>${producto.description}</p>`;
         }
 
-        <button class="agregar-carrito" onclick="agregarAlCarrito(this)" ${producto.category !== 'Repuestos' ? 'disabled' : ''}>
-          Agregar al carrito
-        </button>
-      `;
+        // Agregar el botón "Agregar al carrito", con la condición para habilitarlo solo si la categoría es "Repuestos"
+        contenidoHTML += `
+          <button class="agregar-carrito" onclick="agregarAlCarrito(this)" ${producto.category !== 'Repuestos' ? 'disabled' : ''}>
+            Agregar al carrito
+          </button>
+        `;
+
 
         // Añadir el contenido al contenedor del producto
         productoDiv.innerHTML = contenidoHTML;
