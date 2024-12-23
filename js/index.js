@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3>${producto.name}</h3>
                 <p>Año: ${producto.year || "N/A"}</p>
                 <p>Precio: $${producto.price || "N/A"}</p>
+                <p>Marca: ${producto.marca || "N/A"}</p>
+                <p>Disponibilidad: ${producto.availability || "N/A"}</p>
                 <p>${producto.description || "Sin descripción disponible."}</p>
             `;
             contenedorProductos.appendChild(productoDiv);
