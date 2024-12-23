@@ -44,15 +44,15 @@
         "image": "../images/Carousel/Torino.jpg",
         "category": "Autos Usados"
     },
-	{
+    {
         "id": 6,
         "name": "Frenos",
         "marca": "Bosch",
         "price": "30000",
         "availability": "En stock",
-        "descripcion": "Frenos de alta calidad para vehículos comerciales."
-		"image": "../images/Carousel/bosh.jpg",
-		"category": "Repuesto",
+        "descripcion": "Frenos de alta calidad para vehículos comerciales.",
+	"image": "../images/Carousel/bosh.jpg",
+	"category": "Repuesto",
     },
     {
         "id": 7, 
@@ -60,9 +60,9 @@
         "marca": "Monroe",
         "price": "50000",
         "availability": "En stock",
-        "descripcion": "Amortiguadores para mejorar la suspensión y comodidad."
-		"image": "../images/Carousel/amortiguador.jpg",
-		"category": "Repuesto",
+        "descripcion": "Amortiguadores para mejorar la suspensión y comodidad.",
+	"image": "../images/Carousel/amortiguador.jpg",
+	"category": "Repuesto",
     },
     {
         "id": 8,
@@ -70,9 +70,9 @@
         "marca": "Moura",
         "price": "120000",
         "availability": "Agotado",
-        "descripcion": "Batería de 12V para autos de tamaño medio."
-		"image": "../images/Carousel/bateria.jpg",
-		"category": "Repuesto",
+        "descripcion": "Batería de 12V para autos de tamaño medio.",
+	"image": "../images/Carousel/bateria.jpg",
+	"category": "Repuesto",
     },
     {
         "id": 9,
@@ -80,9 +80,9 @@
         "marca": "Renault Original",
         "price": "15000",
         "availability": "En stock",
-        "descripcion": "Filtro de aire para mantener el motor limpio y eficiente."
-		"image": "../images/Carousel/filtro.jpg",
-		"category": "Repuesto",
+        "descripcion": "Filtro de aire para mantener el motor limpio y eficiente.",
+	"image": "../images/Carousel/filtro.jpg",
+	"category": "Repuesto",
     },
     {
         "id": 10,
@@ -90,9 +90,9 @@
         "marca": "Castrol",
         "price": "50000",
         "availability": "En stock",
-        "descripcion": "Aceite de motor 5W-30 para mejorar el rendimiento del motor."
-		"image": "../images/Carousel/aceite.jpg",
-		"category": "Repuesto",
+        "descripcion": "Aceite de motor 5W-30 para mejorar el rendimiento del motor.",
+	"image": "../images/Carousel/aceite.jpg",
+	"category": "Repuesto",
     },
 	{
         "id": 11,
@@ -100,8 +100,8 @@
         "branch": "Banfield",
         "adress": "Av. Hipólito Yrigoyen 7373, B1832",
         "hours": "8 a.m.–6 p.m",
-		"image": "../images/Carousel/RenaultMinuto.jpg",
-		"category": "Taller Mecanico",
+	"image": "../images/Carousel/RenaultMinuto.jpg",
+	"category": "Taller Mecanico",
     },
 	{
         "id": 12,
@@ -110,7 +110,7 @@
         "adress": "Calle Ficticia 1234, B1765",
         "hours": "9 a.m.–7 p.m",
         "image": "../images/Carousel/RenaultMinuto2.jpg",
-        "category": "Taller Mecanico"
+        "category": "Taller Mecanico",
     }
 ]
 
