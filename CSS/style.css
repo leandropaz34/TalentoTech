@@ -244,6 +244,58 @@ background-color: rgba(114, 110, 110, 0.5);
     margin: 10px; /* Espacio alrededor de cada tarjeta */
 }
 
+/* Estilo para los productos */
+
+/* Estilo general del contenedor de productos */
+#contenedor-productos {
+    display: flex; /* Usamos flexbox */
+    flex-wrap: wrap; /* Permitimos que los productos se acomoden en varias filas si es necesario */
+    gap: 20px; /* Espacio entre los productos */
+    justify-content: space-between; /* Espaciado entre productos */
+}
+
+/* Estilo para cada producto dentro del contenedor */
+#contenedor-productos .producto {
+    width: calc(33.33% - 20px); /* Tres productos por fila, ajustando el espacio entre ellos */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    background-color: #fff; /* Fondo blanco para cada producto */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que las imágenes sobresalgan del contenedor */
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en una columna */
+    align-items: center; /* Centra los elementos dentro del contenedor */
+    padding: 10px; /* Espaciado interno */
+    transition: transform 0.3s ease; /* Agrega una transición suave al hacer hover */
+}
+
+/* Estilo para las imágenes de los productos */
+#contenedor-productos .producto img {
+    max-width: 100%; /* La imagen no debe exceder el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Efecto hover para los productos */
+#contenedor-productos .producto:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del producto al pasar el mouse */
+}
+
+/* Media Queries para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    #contenedor-productos .producto {
+        width: calc(50% - 20px); /* Dos productos por fila en pantallas medianas */
+    }
+}
+
+/* Media Queries para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+    #contenedor-productos .producto {
+        width: 100%; /* Un solo producto por fila en pantallas pequeñas */
+    }
+}
+
+/* Fin de estilos para productos */
+
 /* Estilos para el pie de página */
 footer {
     padding: 20px; /* Espacio interno */
