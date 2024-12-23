@@ -3,45 +3,45 @@
         "id": 1,
         "name": "Kangoo 1",
         "year": 2018,
-        "price": 15000,
+        "price": 11.500.000,
         "description": "Un vehículo utilitario ideal para el trabajo y el transporte.",
-        "image": "./images/Carousel/Kangoo1.jpg",
+        "image": "../images/Carousel/Kangoo 1.webp",
         "category": "Furgoneta"
     },
     {
         "id": 2,
         "name": "Kangoo 2",
         "year": 2022,
-        "price": 20000,
+        "price": 25.000.000,
         "description": "La evolución de la Kangoo, con mayor capacidad y tecnología.",
-        "image": "./images/Carousel/Kangoo2.jpg",
+        "image": "../images/Carousel/Kangoo 2.jpg",
         "category": "Furgoneta"
     },
     {
         "id": 3,
         "name": "Duster",
         "year": 2023,
-        "price": 22000,
+        "price": 32.000.000,
         "description": "Un SUV robusto, perfecto para aventuras y uso urbano.",
-        "image": "./images/Carousel/Duster.jpg",
+        "image": "../images/Carousel/Duster.jpg",
         "category": "SUV"
     },
     {
         "id": 4,
         "name": "Kardian",
         "year": 2023,
-        "price": 25000,
+        "price": 25.000.000,
         "description": "El nuevo SUV de Renault, con diseño elegante y tecnología de punta.",
-        "image": "./images/Carousel/Kardian.jpg",
+        "image": "../images/Carousel/Kardian.jpg",
         "category": "SUV"
     },
     {
         "id": 5,
         "name": "Torino",
         "year": 1973,
-        "price": 30000,
+        "price": 10.000.000,
         "description": "Un clásico muscle car argentino, símbolo de potencia y estilo.",
-        "image": "./images/Carousel/Torino.jpg",
+        "image": "../images/Carousel/Torino.jpg",
         "category": "Clásico"
     }
 ]
