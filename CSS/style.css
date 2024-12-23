@@ -144,18 +144,6 @@ background-color: rgba(114, 110, 110, 0.5);
 	padding: 15px 15px 15px 20px;
 }
 
-
-.carrito_MenuHorizontal a {
-    display: flex;
-    align-items: center;
-    color: yellow;
-    text-decoration: none;
-}
-
-.carrito_MenuHorizontal a:hover {
-    color: gray;
-}
-
 .carrito_MenuHorizontal box-icon {
     fill: yellow;
 }
