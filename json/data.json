@@ -1,1 +1,48 @@
+[
+    {
+        "id": 1,
+        "name": "Kangoo 1",
+        "year": 2018,
+        "price": 15000,
+        "description": "Un vehículo utilitario ideal para el trabajo y el transporte.",
+        "image": "https://raw.githubusercontent.com/leandropaz34/TalentoTech/main/images/Carousel/Kangoo1.jpg",
+        "category": "Furgoneta"
+    },
+    {
+        "id": 2,
+        "name": "Kangoo 2",
+        "year": 2022,
+        "price": 20000,
+        "description": "La evolución de la Kangoo, con mayor capacidad y tecnología.",
+        "image": "https://raw.githubusercontent.com/leandropaz34/TalentoTech/main/images/Carousel/Kangoo2.jpg",
+        "category": "Furgoneta"
+    },
+    {
+        "id": 3,
+        "name": "Duster",
+        "year": 2023,
+        "price": 22000,
+        "description": "Un SUV robusto, perfecto para aventuras y uso urbano.",
+        "image": "https://raw.githubusercontent.com/leandropaz34/TalentoTech/main/images/Carousel/Duster.jpg",
+        "category": "SUV"
+    },
+    {
+        "id": 4,
+        "name": "Kardian",
+        "year": 2023,
+        "price": 25000,
+        "description": "El nuevo SUV de Renault, con diseño elegante y tecnología de punta.",
+        "image": "https://raw.githubusercontent.com/leandropaz34/TalentoTech/main/images/Carousel/Kardian.jpg",
+        "category": "SUV"
+    },
+    {
+        "id": 5,
+        "name": "Torino",
+        "year": 1973,
+        "price": 30000,
+        "description": "Un clásico muscle car argentino, símbolo de potencia y estilo.",
+        "image": "https://raw.githubusercontent.com/leandropaz34/TalentoTech/main/images/Carousel/Torino.jpg",
+        "category": "Clásico"
+    }
+]
 
