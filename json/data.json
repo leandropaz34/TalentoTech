@@ -6,7 +6,7 @@
         "price": 11500000,
         "description": "Un vehículo utilitario ideal para el trabajo y el transporte.",
         "image": "../images/Carousel/Kangoo 1.webp",
-        "category": "Furgoneta"
+        "category": "Autos Usados"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "price": 25000000,
         "description": "La evolución de la Kangoo, con mayor capacidad y tecnología.",
         "image": "../images/Carousel/Kangoo 2.webp",
-        "category": "Furgoneta"
+        "category": "Autos Nuevos"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "price": 32000000,
         "description": "Un SUV robusto, perfecto para aventuras y uso urbano.",
         "image": "../images/Carousel/Duster.jpg",
-        "category": "SUV"
+        "category": "Autos Nuevos"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "price": 25000000,
         "description": "El nuevo SUV de Renault, con diseño elegante y tecnología de punta.",
         "image": "../images/Carousel/Kardian.jpg",
-        "category": "SUV"
+        "category": "Autos Nuevos"
     },
     {
         "id": 5,
@@ -42,7 +42,75 @@
         "price": 10000000,
         "description": "Un clásico muscle car argentino, símbolo de potencia y estilo.",
         "image": "../images/Carousel/Torino.jpg",
-        "category": "Clásico"
+        "category": "Autos Usados"
+    },
+	{
+        "id": 6,
+        "name": "Frenos",
+        "marca": "Bosch",
+        "price": "30000",
+        "availability": "En stock",
+        "descripcion": "Frenos de alta calidad para vehículos comerciales."
+		"image": "../images/Carousel/Kardian.jpg",
+		"category": "repuesto",
+    },
+    {
+        "id": 7, 
+        "name": "Amortiguadores",
+        "marca": "Monroe",
+        "price": "50000",
+        "availability": "En stock",
+        "descripcion": "Amortiguadores para mejorar la suspensión y comodidad."
+		"image": "../images/Carousel/Kardian.jpg",
+		"category": "repuesto",
+    },
+    {
+        "id": 8,
+        "name": "Batería",
+        "marca": "Moura",
+        "price": "120000",
+        "availability": "Agotado",
+        "descripcion": "Batería de 12V para autos de tamaño medio."
+		"image": "../images/Carousel/Kardian.jpg",
+		"category": "repuesto",
+    },
+    {
+        "id": 9,
+        "name": "Filtro de aire",
+        "marca": "Mann-Filter",
+        "price": "15000",
+        "availability": "En stock",
+        "descripcion": "Filtro de aire para mantener el motor limpio y eficiente."
+		"image": "../images/Carousel/Kardian.jpg",
+		"category": "repuesto",
+    },
+    {
+        "id": 10,
+        "name": "Aceite de motor",
+        "marca": "Castrol",
+        "price": "50000",
+        "availability": "En stock",
+        "descripcion": "Aceite de motor 5W-30 para mejorar el rendimiento del motor."
+		"image": "../images/Carousel/Kardian.jpg",
+		"category": "repuesto",
+    },
+	{
+        "id": 11,
+        "name": "Taller Renault Minuto",
+        "branch": "Banfield",
+        "adress": "Av. Hipólito Yrigoyen 7373, B1832",
+        "hours": "8 a.m.–6 p.m",
+		"image": "../images/Carousel/RenaultMinuto.jpg",
+		"category": "Taller Mecanico",
+    },
+	{
+        "id": 12,
+        "name": "Taller Renault Minuto CABA",
+        "branch": "Liniers",
+        "adress": "Calle Ficticia 1234, B1765",
+        "hours": "9 a.m.–7 p.m",
+        "image": "../images/Carousel/RenaultMinuto2.jpg",
+        "category": "Taller Mecanico"
     }
 ]
 
