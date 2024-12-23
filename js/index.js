@@ -75,12 +75,11 @@ function mostrarProductos(productos) {
             contenidoHTML += `<p>${producto.description}</p>`;
         }
 
-        // Agregar el botón "Agregar al carrito", con la condición para habilitarlo solo si la categoría es "Repuestos"
-        contenidoHTML += `
-          <button class="agregar-carrito" onclick="agregarAlCarrito(this)" ${producto.category !== 'Repuesto' ? 'disabled' : ''}>
-            Agregar al carrito
-          </button>
-        `;
+       // Agregar el botón solo si la categoría es 'Repuesto'
+        
+        if (producto.category === 'Repuesto') {
+            contenidoHTML += `<button class="agregar-carrito" onclick="agregarAlCarrito(this)">Agregar al carrito</button>`;
+        }
 
 
         // Añadir el contenido al contenedor del producto
