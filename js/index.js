@@ -75,7 +75,7 @@ function mostrarProductos(productos) {
             contenidoHTML += `<p>${producto.description}</p>`;
         }
 
-        <button class="agregar-carrito" onclick="agregarAlCarrito(this)" ${producto.categoria !== 'repuestos' ? 'disabled' : ''}>
+        <button class="agregar-carrito" onclick="agregarAlCarrito(this)" ${producto.category !== 'Repuestos' ? 'disabled' : ''}>
           Agregar al carrito
         </button>
       `;
