@@ -23,18 +23,24 @@ main {
     background-color: #828e9b;  /* Fondo gris claro */
 }
 
+
+/* Sección Contacto */
 .seccion-contacto {
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Elementos en columna */
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
     padding: 1.25rem;
-    text-align: center; /* Centramos el contenido */
-    background-color: #f8f9fa; /* Color de fondo claro */
-    min-height:75vh;
+    text-align: center;
+    background-color: #f8f9fa;
+    min-height: 75vh;
     background-position: center;
     background-size: cover;
 }
 
+/* Estilo para formulario */
+
 main form {
-    	
-    text-align: center; /* Centramos el contenido */	
     margin-top: 30px; /* Espacio superior antes del formulario */
 }
 
@@ -43,7 +49,7 @@ main form h1 {
 }
 
 main input, main textarea {
-    width: 60%;	
+    width: 100%; /* Campos ocupan todo el ancho disponible */
     padding: 10px; /* Espacio interno en los campos */
     margin-bottom: 10px; /* Espacio inferior entre los campos */
     border: 1px solid #ced4da; /* Borde gris claro */
@@ -60,8 +66,11 @@ main button {
 }
 
 main button:hover {
-    background-color: #0056b3; /* Color más oscuro al pasar el mouse*/
+    background-color: #0056b3;
+
 }
+
+/* Estilo para formulario */
 
 .nav_inicio {
     display: flex;
@@ -151,6 +160,20 @@ background-color: rgba(114, 110, 110, 0.5);
     margin-bottom: 20px; /* Espacio debajo del título */
     font-weight: bold; /* Enfatizamos el título */	
 
+}
+
+.Titulo_ubicacion {
+    text-align: center; /* Centra el texto */
+    font-size: 28px; /* Tamaño de la fuente */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #343a40; /* Color del texto */
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 10px 20px; /* Espaciado interno para resaltar */
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    margin: 20px auto; /* Espaciado superior e inferior, centrado horizontal */
+    width: fit-content; /* Ajusta el ancho al contenido */
 }
 
 .parrafo_conocenos {
