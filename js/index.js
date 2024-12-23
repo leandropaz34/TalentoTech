@@ -1,3 +1,10 @@
+import {
+    guardarCarritoEnLocalStorage,
+    cargarCarritoDeLocalStorage,
+    actualizarNumeroProductosCarrito
+} from "./utilidadesCarrito.js"
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const apiUrl = "../json/data.json"; // URL de la API
     const contenedorProductos = document.getElementById("contenedor-productos");
