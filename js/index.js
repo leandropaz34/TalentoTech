@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiUrl = "../json/data.json"; // URL de la API
+    const apiUrl = "https://fakestoreapi.com/products"; // URL de la API
     const contenedorProductos = document.getElementById("contenedor-productos");
     const selectorCategorias = document.getElementById("selector-categorias");
 
