@@ -91,6 +91,12 @@ main button:hover {
     margin: 0; 	/* Quitamos márgenes */
 }
 
+.carrito{
+    margin: 0 1.25rem;
+    padding: 0.75rem;
+    color: white; /* Color del texto en blanco */
+}
+
 .nav_MenuHorizontal {
     position: fixed; /* Fijo en la parte superior */
     top: 0; /* Posición al inicio de la página */
