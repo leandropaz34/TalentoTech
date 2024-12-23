@@ -304,7 +304,7 @@ function displayCarritoVacio(){
     <!--Crear elemento    
     const msgCarritoVacio = document.createElement("p")
     <!--Agregarle texto
-    msgCarritoVacio.textContent = "TU CARRITO ESTA VACIO 😥"
+    msgCarritoVacio.textContent = "TU CARRITO ESTA VACIO"
     <!--Agregar clase
     msgCarritoVacio.classList.add("msg-carrito-vacio")
     <!--Agregar el elemento a la pagina
