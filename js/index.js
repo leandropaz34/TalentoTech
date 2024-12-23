@@ -59,8 +59,8 @@ function mostrarProductos(productos) {
         if (producto.marca) {
             contenidoHTML += `<p>Marca: ${producto.marca}</p>`;
         }
-        if (producto.availability !== undefined) { // Considerar valores booleanos
-            contenidoHTML += `<p>Disponibilidad: ${producto.availability ? "Disponible" : "No disponible"}</p>`;
+        if (producto.availability) {
+            contenidoHTML += `<p>Disponibilidad: ${producto.availability}</p>`;
         }
         if (producto.branch) {
             contenidoHTML += `<p>Localidad: ${producto.branch}</p>`;
