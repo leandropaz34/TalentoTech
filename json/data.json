@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Kangoo 1",
         "year": 2018,
-        "price": 11.500.000,
+        "price": 11500000,
         "description": "Un vehículo utilitario ideal para el trabajo y el transporte.",
         "image": "../images/Carousel/Kangoo 1.webp",
         "category": "Furgoneta"
@@ -12,7 +12,7 @@
         "id": 2,
         "name": "Kangoo 2",
         "year": 2022,
-        "price": 25.000.000,
+        "price": 25000000,
         "description": "La evolución de la Kangoo, con mayor capacidad y tecnología.",
         "image": "../images/Carousel/Kangoo 2.jpg",
         "category": "Furgoneta"
@@ -21,7 +21,7 @@
         "id": 3,
         "name": "Duster",
         "year": 2023,
-        "price": 32.000.000,
+        "price": 32000000,
         "description": "Un SUV robusto, perfecto para aventuras y uso urbano.",
         "image": "../images/Carousel/Duster.jpg",
         "category": "SUV"
@@ -30,7 +30,7 @@
         "id": 4,
         "name": "Kardian",
         "year": 2023,
-        "price": 25.000.000,
+        "price": 25000000,
         "description": "El nuevo SUV de Renault, con diseño elegante y tecnología de punta.",
         "image": "../images/Carousel/Kardian.jpg",
         "category": "SUV"
@@ -39,7 +39,7 @@
         "id": 5,
         "name": "Torino",
         "year": 1973,
-        "price": 10.000.000,
+        "price": 10000000,
         "description": "Un clásico muscle car argentino, símbolo de potencia y estilo.",
         "image": "../images/Carousel/Torino.jpg",
         "category": "Clásico"
