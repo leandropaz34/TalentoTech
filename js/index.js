@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiUrl = "https://www.freetestapi.com/apis/cars"; // URL de la API
+    const apiUrl = "./json/data.json"; // URL de la API
     const contenedorProductos = document.getElementById("contenedor-productos");
     const selectorCategorias = document.getElementById("selector-categorias");
 
