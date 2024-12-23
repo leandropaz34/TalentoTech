@@ -50,7 +50,7 @@
         "marca": "Bosch",
         "price": 30000,
         "availability": "En stock",
-        "descripcion": "Frenos de alta calidad para vehículos comerciales.",
+        "description": "Frenos de alta calidad para vehículos comerciales.",
         "image": "../images/Carousel/bosh.jpg",
         "category": "Repuesto"
     },
@@ -60,7 +60,7 @@
         "marca": "Monroe",
         "price": 50000,
         "availability": "En stock",
-        "descripcion": "Amortiguadores para mejorar la suspensión y comodidad.",
+        "description": "Amortiguadores para mejorar la suspensión y comodidad.",
         "image": "../images/Carousel/amortiguador.jpg",
         "category": "Repuesto"
     },
@@ -70,7 +70,7 @@
         "marca": "Moura",
         "price": 120000,
         "availability": "Agotado",
-        "descripcion": "Batería de 12V para autos de tamaño medio.",
+        "description": "Batería de 12V para autos de tamaño medio.",
         "image": "../images/Carousel/bateria.jpg",
         "category": "Repuesto"
     },
@@ -80,7 +80,7 @@
         "marca": "Renault Original",
         "price": 15000,
         "availability": "En stock",
-        "descripcion": "Filtro de aire para mantener el motor limpio y eficiente.",
+        "description": "Filtro de aire para mantener el motor limpio y eficiente.",
         "image": "../images/Carousel/filtro.jpg",
         "category": "Repuesto"
     },
@@ -90,7 +90,7 @@
         "marca": "Castrol",
         "price": 50000,
         "availability": "En stock",
-        "descripcion": "Aceite de motor 5W-30 para mejorar el rendimiento del motor.",
+        "description": "Aceite de motor 5W-30 para mejorar el rendimiento del motor.",
         "image": "../images/Carousel/aceite.jpg",
         "category": "Repuesto"
     },
