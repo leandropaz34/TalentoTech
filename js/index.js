@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const apiUrl = "../json/data.json"; // URL de la API
-  //  const contenedorProductos = document.getElementById("contenedor-productos");
-  //  const selectorCategorias = document.getElementById("selector-categorias");
+    const contenedorProductos = document.getElementById("contenedor-productos");
+    const selectorCategorias = document.getElementById("selector-categorias");
 
-   // let productos = []; // Array para almacenar los productos
-
-    // Función para obtener datos de la API
+       // Función para obtener datos de la API 
+    let productos = []; // Array para almacenar los productos
 
 // variable global para almacenar los productos seleccionados
 let carrito = [];
