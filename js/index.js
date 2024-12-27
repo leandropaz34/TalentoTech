@@ -11,7 +11,7 @@ let carrito = [];
 
 const agregarAlcarrito = (nombre,precio) =>{
     //agregar el producto como un objeto al carrito
-    carrito.push({nombre,precio})
+    carrito.push({name,price})
 
     // actualizar el contador visual del carrito
     actualizarContador()
