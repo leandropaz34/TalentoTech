@@ -37,7 +37,7 @@ const actualizarResumen = () => {
 };
 
 // Elimina un producto del carrito
-const eliminarDelCarrito = (indice) => {
+export const eliminarDelCarrito = (indice) => {
     carrito.splice(indice, 1);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     mostrarCarrito();  // Vuelve a renderizar el carrito con los productos actualizados
