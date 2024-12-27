@@ -7,7 +7,7 @@ const mostrarCarrito = () => {
     lista.innerHTML = "";
 
     if (carrito.length === 0) {
-        lista.innerHTML = '<p>Tu carrito está vacio</p>';
+        lista.innerHTML = '<p>Tu carrito está vacío</p>';
         actualizarResumen();
         return;
     }
@@ -16,8 +16,8 @@ const mostrarCarrito = () => {
         const producto = document.createElement("article");
         producto.classList.add("producto");
         producto.innerHTML = `
-            <h2>${producto.name}</h2>
-            <p class="precio">$${producto.price}</p>
+            <h2>${item.name}</h2>
+            <p class="precio">$${item.price}</p>
             <button onclick="eliminarDelCarrito(${indice})">Eliminar</button>
         `;
         lista.appendChild(producto);
@@ -34,25 +34,21 @@ const actualizarResumen = () => {
     const total = carrito.reduce((acc, item) => acc + item.price, 0);
     totalProductos.textContent = carrito.length;
     importeTotal.textContent = total.toFixed(2);
-
-    const botonCompra = document.querySelector("button[onclick='realizarCompra()']");
-    const resumenCarrito = document.getElementById("resumen-carrito");
-    resumenCarrito.appendChild(botonCompra);
 };
 
 // Elimina un producto del carrito
 const eliminarDelCarrito = (indice) => {
     carrito.splice(indice, 1);
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    mostrarCarrito();
+    mostrarCarrito();  // Vuelve a renderizar el carrito con los productos actualizados
 };
 
 // Simula la compra
 const realizarCompra = () => {
     alert("Compra realizada con éxito");
-    localStorage.removeItem("carrito");
-    window.location.href = "index.html";
+    localStorage.removeItem("carrito");  // Elimina el carrito de localStorage
+    window.location.href = "index.html";  // Redirige a la página principal
 };
 
 // Inicializa el carrito al cargar la página
-mostrarCarrito();
+document.addEventListener("DOMContentLoaded", mostrarCarrito);
