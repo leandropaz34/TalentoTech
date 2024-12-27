@@ -1,18 +1,43 @@
-import {
-    guardarCarritoEnLocalStorage,
-    cargarCarritoDeLocalStorage,
-    actualizarNumeroProductosCarrito
-} from "./utilidadesCarrito.js"
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const apiUrl = "../json/data.json"; // URL de la API
-    const contenedorProductos = document.getElementById("contenedor-productos");
-    const selectorCategorias = document.getElementById("selector-categorias");
+  //  const contenedorProductos = document.getElementById("contenedor-productos");
+  //  const selectorCategorias = document.getElementById("selector-categorias");
 
-    let productos = []; // Array para almacenar los productos
+   // let productos = []; // Array para almacenar los productos
 
     // Función para obtener datos de la API
+
+// variable global para almacenar los productos seleccionados
+let carrito = [];
+
+const agregarAlcarrito = (nombre,precio) =>{
+    //agregar el producto como un objeto al carrito
+    carrito.push({nombre,precio})
+
+    // actualizar el contador visual del carrito
+    actualizarContador()
+    // muestra un alerta de confirmacion
+    alert(`Agregaste : ${nombre} al carrito`)
+}
+
+
+// funcion para actualizar el contador del carrito
+const actualizarContador = ()=>{
+    //cambiamos el contenido del HTML con el ID contador-carrito
+    document.getElementById("contador-carrito").textContent = carrito.length
+
+}
+
+// Guarda el contenido del carrito en el almacenamiento local antes de cerrar la pagina
+
+window.addEventListener("beforeunload",()=>{
+localStorage.setItem("carrito",JSON.stringify(carrito))
+});
+
+
+
+
+    
     async function fetchProductos() {
         try {
             const response = await fetch(apiUrl);
