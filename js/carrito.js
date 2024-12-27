@@ -47,7 +47,7 @@ const eliminarDelCarrito = (indice) => {
 const realizarCompra = () => {
     alert("Compra realizada con éxito");
     localStorage.removeItem("carrito");  // Elimina el carrito de localStorage
-    window.location.href = "..index.html";  // Redirige a la página principal
+    window.location.href = "../index.html";  // Redirige a la página principal
 };
 
 // Inicializa el carrito al cargar la página
