@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
 // variable global para almacenar los productos seleccionados
 let carrito = [];
 
-const agregarAlcarrito = (nombre,precio) =>{
+const agregarAlcarrito = (name,price) =>{
     //agregar el producto como un objeto al carrito
     carrito.push({name,price})
 
     // actualizar el contador visual del carrito
     actualizarContador()
     // muestra un alerta de confirmacion
-    alert(`Agregaste : ${nombre} al carrito`)
+    alert(`Agregaste : ${name} al carrito`)
 }
 
 
