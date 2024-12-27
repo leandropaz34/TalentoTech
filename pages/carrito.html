@@ -59,44 +59,24 @@
 
         <main>
 
-            <section class="seccion-productos" id="seccion-productos">
-                <h2>Tu pedido</h2>
+              <!-- Seccion principal del carrito -->
+    <section id="carrito" class="productos">
 
-                <div class="contenedor-productos" id="contenedor-productos">
-                    
-                <!--LOS PRODUCTOS SE CARGARÁN DINAMICAMENTE DESDE EL LOCAL STORAGE, EL CONTENIDO QUE SIGUE ES DE PRUEBA-->
+        <h2>Tu carrito</h2>
+        <div id="lista-carrito">
+            <!-- Lista de productos -->
+        </div>
 
+        <!-- Seccion de resumen del carrito -->
+        <div id="resumen-carrito">
+            <p>Total de productos: <span id="total-productos">0</span></p>
+            <p>Importe total: $<span id="importe-total">0</span></p>
+        </div>
 
-                
+        <button onclick="realizarCompra()">Finalizar la compra</button><!--  boton de compra -->
 
-                </div> <!--fin contenedor productos-->
+    </section>
 
-                
-                <div id="contenedor-finalizar-compra">
-                    <!--ACA SE GENERA DINAMICAMENTE EL BOTON FINALIZAR COMPRA SOLO CUANDO HAY ALGO EN EL CARRITO-->
-                </div>
-
-            </section> <!--fin seccion productos-->
-
-            <!--ACÁ SE FINALIZA LA COMPRA AL PULSAR EL BOTÓN FINALIZAR COMPRA-->
-            <section class="seccion-checkout">
-                <!--UN MODAL QUE APARECERÁ AL FINALIZAR LA COMPRA-->
-
-                <dialog id="dialogo-finalizar-compra">
-                    <h2>¡Finalizando compra!</h2>
-                    <p>Estás por comprar estos artículos:</p>
-                    <ul id="lista-articulos-comprar">
-
-                    </ul>
-
-                    <p>Y vas a gastar $ <span id="total-a-pagar"></span></p>
-
-                    <p>¿Querés continuar?</p>
-                    <button type="button" id="btn-comprar">SI,FINALIZAR COMPRA</button>
-                    <button type="button" id="btn-volver-carrito">NO, VOLVER AL CARRITO</button>
-
-                </dialog> <!--fin dialogo finalizar compra-->
-            </section>
             
 
     
