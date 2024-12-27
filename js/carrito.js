@@ -16,8 +16,8 @@ const mostrarCarrito = () => {
         const producto = document.createElement("article");
         producto.classList.add("producto");
         producto.innerHTML = `
-            <h2>${item.name}</h2>
-            <p class="precio">$${item.price}</p>
+            <h2>${producto.name}</h2>
+            <p class="precio">$${producto.price}</p>
             <button onclick="eliminarDelCarrito(${indice})">Eliminar</button>
         `;
         lista.appendChild(producto);
