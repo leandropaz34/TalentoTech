@@ -9,29 +9,31 @@ document.addEventListener("DOMContentLoaded", () => {
 // variable global para almacenar los productos seleccionados
 let carrito = [];
 
-const agregarAlcarrito = (name,price) =>{
-    //agregar el producto como un objeto al carrito
-    carrito.push({name,price})
+const agregarAlcarrito = (name, price) => {
+    // agregar el producto como un objeto al carrito
+    carrito.push({ name, price });
 
     // actualizar el contador visual del carrito
-    actualizarContador()
+    actualizarContador();
+
     // muestra un alerta de confirmacion
-    alert(`Agregaste : ${name} al carrito`)
-}
+    alert(`Agregaste: ${name} al carrito`);
+};
 
+// Hacer accesible globalmente
+window.agregarAlcarrito = agregarAlcarrito;
 
-// funcion para actualizar el contador del carrito
-const actualizarContador = ()=>{
-    //cambiamos el contenido del HTML con el ID contador-carrito
-    document.getElementById("contador-carrito").textContent = carrito.length
+// función para actualizar el contador del carrito
+const actualizarContador = () => {
+    // cambiamos el contenido del HTML con el ID contador-carrito
+    document.getElementById("contador-carrito").textContent = carrito.length;
+};
 
-}
-
-// Guarda el contenido del carrito en el almacenamiento local antes de cerrar la pagina
-
-window.addEventListener("beforeunload",()=>{
-localStorage.setItem("carrito",JSON.stringify(carrito))
+// Guarda el contenido del carrito en el almacenamiento local antes de cerrar la página
+window.addEventListener("beforeunload", () => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
 });
+
 
 
 
