@@ -16,8 +16,8 @@ const mostrarCarrito = () => {
         const producto = document.createElement("article");
         producto.classList.add("producto");
         producto.innerHTML = `
-            <h2>${item.nombre}</h2>
-            <p class="precio">$${item.precio}</p>
+            <h2>${item.name}</h2>
+            <p class="precio">$${item.price}</p>
             <button onclick="eliminarDelCarrito(${indice})">Eliminar</button>
         `;
         lista.appendChild(producto);
@@ -31,7 +31,7 @@ const actualizarResumen = () => {
     const totalProductos = document.getElementById("total-productos");
     const importeTotal = document.getElementById("importe-total");
 
-    const total = carrito.reduce((acc, item) => acc + item.precio, 0);
+    const total = carrito.reduce((acc, item) => acc + item.price, 0);
     totalProductos.textContent = carrito.length;
     importeTotal.textContent = total.toFixed(2);
 
