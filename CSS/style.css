@@ -397,6 +397,41 @@ button[onclick="realizarCompra()"]:hover {
     margin: 10px; /* Espacio alrededor de cada tarjeta */
 }
 
+/* Estilo para el label */
+label[for="selector-categorias"] {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 8px;
+    display: inline-block; /* Asegura que respete el margen inferior */
+}
+
+/* Estilo para el select */
+#selector-categorias {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Cambios al pasar el cursor */
+#selector-categorias:hover {
+    border-color: #007bff;
+    background-color: #eef5ff;
+}
+
+/* Cambios al enfocar */
+#selector-categorias:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
 /* Estilo para los productos */
 
 /* Estilo general del contenedor de productos */
