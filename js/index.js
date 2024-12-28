@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 let carrito = [];
 
 const agregarAlcarrito = (name, price) => {
-    // agregar el producto como un objeto al carrito
     carrito.push({ name, price });
+    localStorage.setItem("carrito", JSON.stringify(carrito)); // Guardar carrito actualizado
 
     // actualizar el contador visual del carrito
     actualizarContador();
