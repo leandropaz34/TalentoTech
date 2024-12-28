@@ -91,7 +91,7 @@ function mostrarProductos(productos) {
         productoDiv.classList.add("producto");
 
         let contenidoHTML = `
-            <img src="${producto.image || 'https://via.placeholder.com/150'}" alt="${producto.name}">
+            <img src="${producto.image alt="${producto.name}">
             <h3>${producto.name}</h3>
         `;
 
