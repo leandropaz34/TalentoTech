@@ -131,6 +131,23 @@ function mostrarProductos(productos) {
         mostrarProductos(productosFiltrados);
     });
 
+
+     // Función para aplicar el filtro desde la URL
+    function aplicarFiltroDesdeURL() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoria = urlParams.get('categoria');
+
+        if (categoria) {
+            const productosFiltrados = categoria === "all"
+                ? productos
+                : productos.filter(producto => producto.category === categoria);
+            mostrarProductos(productosFiltrados);
+            selectorCategorias.value = categoria; // Seleccionar categoría en el dropdown
+        } else {
+            mostrarProductos(productos); // Mostrar todos si no hay filtro
+        }
+    }
+
     // Llamar a la función para cargar los datos al cargar la página
     fetchProductos();
 });
