@@ -234,6 +234,21 @@ h2 {
     margin: 10px 0;
 }
 
+button[onclick="realizarCompra()"] {
+    background-color: #28a745;  /* Color de fondo */
+    color: white;  /* Color del texto */
+    border: none;  /* Sin bordes */
+    padding: 15px 25px;  /* Espaciado interno */
+    font-size: 1.2rem;  /* Tamaño de la fuente */
+    font-weight: bold;  /* Fuente en negrita */
+    border-radius: 5px;  /* Bordes redondeados */
+    cursor: pointer;  /* Cambia el cursor a mano */
+    transition: background-color 0.3s ease;  /* Transición suave */
+}
+
+button[onclick="realizarCompra()"]:hover {
+    background-color: #218838;  /* Cambia el color cuando se pasa el mouse */
+}
 
 
 /* Estilo para el carrito vacío */
