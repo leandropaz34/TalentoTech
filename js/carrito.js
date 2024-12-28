@@ -1,6 +1,9 @@
 // Recuperar el carrito del almacenamiento local
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+// importar funsionactualizarContadorCarrito 
+import { actualizarContadorCarrito } from './contadorCarrito.js';
+
 // Muestra los productos en el carrito
 const mostrarCarrito = () => {
     const lista = document.getElementById("lista-carrito");
