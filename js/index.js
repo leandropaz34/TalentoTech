@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // variable global para almacenar los productos seleccionados
 let carrito = [];
 
-const agregarAlcarrito = (name, price) => {
+const agregarAlcarrito = (name, price, image) => {
  // ver si el producto ya esta en el carrito
     const productoExistente = carrito.find(item => item.name === name && item.price === price);       
     if (productoExistente) {
