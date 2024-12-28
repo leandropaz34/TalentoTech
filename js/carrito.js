@@ -45,14 +45,14 @@ const actualizarResumen = () => {
 };
 
 // Aumenta la cantidad de un producto en el carrito
-const aumentarCantidad = (indice) => {
+export const aumentarCantidad = (indice) => {
     carrito[indice].cantidad += 1;
     localStorage.setItem("carrito", JSON.stringify(carrito));
     mostrarCarrito();
 };
 
 // Disminuye la cantidad de un producto en el carrito
-const disminuirCantidad = (indice) => {
+export const disminuirCantidad = (indice) => {
     if (carrito[indice].cantidad > 1) {
         carrito[indice].cantidad -= 1;
         localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -63,14 +63,14 @@ const disminuirCantidad = (indice) => {
 };
 
 // Elimina un producto del carrito
-const eliminarDelCarrito = (indice) => {
+export const eliminarDelCarrito = (indice) => {
     carrito.splice(indice, 1);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     mostrarCarrito(); // Vuelve a renderizar el carrito con los productos actualizados
 };
 
 // Simula la compra
-const realizarCompra = () => {
+export const realizarCompra = () => {
     alert("Compra realizada con éxito");
     localStorage.removeItem("carrito"); // Elimina el carrito de localStorage
     window.location.href = "../index.html"; // Redirige a la página principal
