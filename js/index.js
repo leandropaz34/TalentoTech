@@ -17,7 +17,7 @@ const agregarAlcarrito = (name, price) => {
     productoExistente.cantidad += 1;
     } else {
     // si no existe, agregarlo con una cantidad con numero 1
-     carrito.push({ name, price, cantidad: 1 });
+     carrito.push({ name, price, cantidad: 1, image });
     }
 
     localStorage.setItem("carrito", JSON.stringify(carrito)); // Guardar carrito actualizado
