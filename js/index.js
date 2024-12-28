@@ -48,6 +48,10 @@ window.addEventListener("beforeunload", () => {
             productos = await response.json();
             cargarCategorias(productos);
             mostrarProductos(productos);
+
+         // Llamar a la función para aplicar el filtro de la URL después de cargar los productos
+         aplicarFiltroDesdeURL();
+            
         } catch (error) {
             console.error("Error al obtener datos:", error.message);
             contenedorProductos.innerHTML = `<p>Error al cargar los productos.</p>`;
