@@ -10,7 +10,7 @@ const mostrarCarrito = () => {
     lista.innerHTML = "";
 
     if (carrito.length === 0) {
-        lista.innerHTML = '<p>Tu carrito está vacío</p>';
+        lista.innerHTML = '<p class="carrito-vacio">Tu carrito está vacío</p>';
         actualizarResumen();
         return;
     }
