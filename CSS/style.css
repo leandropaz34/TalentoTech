@@ -227,6 +227,10 @@ h2 {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;                /* Activa flexbox */
+    flex-direction: column;       /* Alinea los elementos verticalmente */
+    align-items: center;          /* Centra los elementos horizontalmente */
+    text-align: center;           /* Alinea el texto de los párrafos */
 }
 
 #resumen-carrito p {
@@ -234,22 +238,23 @@ h2 {
     margin: 10px 0;
 }
 
+/* Estilos para el botón de compra */
 button[onclick="realizarCompra()"] {
-    background-color: #28a745;  /* Color de fondo */
-    color: white;  /* Color del texto */
-    border: none;  /* Sin bordes */
-    padding: 15px 25px;  /* Espaciado interno */
-    font-size: 1.2rem;  /* Tamaño de la fuente */
-    font-weight: bold;  /* Fuente en negrita */
-    border-radius: 5px;  /* Bordes redondeados */
-    cursor: pointer;  /* Cambia el cursor a mano */
+    background-color: #28a745;    /* Color de fondo */
+    color: white;                 /* Color del texto */
+    border: none;                 /* Sin bordes */
+    padding: 15px 25px;           /* Espaciado interno */
+    font-size: 1.2rem;            /* Tamaño de la fuente */
+    font-weight: bold;            /* Fuente en negrita */
+    border-radius: 5px;           /* Bordes redondeados */
+    cursor: pointer;              /* Cambia el cursor a mano */
     transition: background-color 0.3s ease;  /* Transición suave */
+    margin-top: 20px;             /* Espaciado superior para separarlo del total */
 }
 
 button[onclick="realizarCompra()"]:hover {
-    background-color: #218838;  /* Cambia el color cuando se pasa el mouse */
+    background-color: #218838;    /* Cambia el color cuando se pasa el mouse */
 }
-
 
 /* Estilo para el carrito vacío */
 #lista-carrito p {
