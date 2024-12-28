@@ -16,6 +16,7 @@ const mostrarCarrito = () => {
         const producto = document.createElement("article");
         producto.classList.add("producto");
         producto.innerHTML = `
+            <img src="${item.image || 'https://via.placeholder.com/150'}" alt="${item.name}" class="img-producto">
             <h2>${item.name}</h2>
             <p class="precio">$${item.price}</p>
             <p>Cantidad: ${item.cantidad}</p>
