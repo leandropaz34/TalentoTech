@@ -70,12 +70,14 @@ export const eliminarDelCarrito = (indice) => {
     carrito.splice(indice, 1);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     mostrarCarrito(); // Vuelve a renderizar el carrito con los productos actualizados
+    actualizarContadorCarrito(); // Actualiza el contador del carrito
 };
 
 // Simula la compra
 export const realizarCompra = () => {
     alert("Compra realizada con éxito");
     localStorage.removeItem("carrito"); // Elimina el carrito de localStorage
+    actualizarContadorCarrito(); // Actualiza el contador del carrito
     window.location.href = "../index.html"; // Redirige a la página principal
 };
 
