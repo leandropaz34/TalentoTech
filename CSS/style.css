@@ -91,13 +91,12 @@ main button:hover {
     margin: 0; 	/* Quitamos márgenes */
 }
 
-/* Menú Horizontal */
 .nav_MenuHorizontal {
-    position: fixed; 
-    top: 0;
-    width: 100%; 
-    background-color: black; 
-    z-index: 1000; 
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Posición al inicio de la página */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: black; /* Fondo negro */
+    z-index: 1000; /* Prioridad de visibilidad */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -105,98 +104,44 @@ main button:hover {
 }
 
 .MenuHorizontal {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+list-style: none;
+display: flex;
+justify-content: space-around;
+
 }
 
-.MenuHorizontal > li > a {
+.MenuHorizontal > li > a{
     display: block;
     padding: 15px 20px;
     color: yellow;
     text-decoration: none;
 }
 
-.MenuHorizontal > li:hover {
+.MenuHorizontal >li:hover{
     background-color: gray;
 }
 
-.MenuVertical {
+.MenuVertical{
     position: absolute;
     display: none;
     width: 200px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.MenuHorizontal li:hover .MenuVertical {
+.MenuHorizontal li:hover .MenuVertical{
     display: block;
 }
 
-.MenuVertical li:hover {
-    background-color: rgba(114, 110, 110, 0.5);
+.MenuVertical li:hover{
+background-color: rgba(114, 110, 110, 0.5);
+
 }
 
-.MenuVertical li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 15px 15px 15px 20px;
-}
-
-/* Menú Hamburguesa */
-.menu-hamburguesa {
-    display: none; /* Esconde el menú por defecto */
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #394149;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.menu-hamburguesa ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-hamburguesa li {
-    margin: 10px 0;
-}
-
-.menu-hamburguesa a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-}
-
-.menu-hamburguesa a:hover {
-    background-color: #555;
-}
-
-.hamburguesa-icon {
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    display: block;
-}
-
-/* Mostrar el menú hamburguesa en dispositivos móviles */
-@media (max-width: 768px) {
-    .menu-hamburguesa {
-        display: flex; /* Muestra el menú hamburguesa */
-    }
-
-    .hamburguesa-icon {
-        display: block; /* Muestra el icono de hamburguesa */
-    }
-
-    .nav_MenuHorizontal {
-        display: none; /* Esconde el menú horizontal en pantallas pequeñas */
-    }
+.MenuVertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
 }
 
 .carrito_MenuHorizontal box-icon {
