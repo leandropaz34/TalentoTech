@@ -153,72 +153,95 @@ background-color: rgba(114, 110, 110, 0.5);
     font-weight: bold;
 }
 
-/* Estilos para el carrito */
+/* Estilos generales para el carrito */
 #carrito {
     padding: 20px;
-    background-color: #f8f9fa;
+    font-family: 'Cabin', sans-serif;
 }
 
-#carrito h2 {
-    font-size: 24px;
-    font-weight: bold;
+h2 {
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 #lista-carrito {
-    margin-bottom: 30px;
-}
-
-.producto-carrito {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.producto-carrito img {
-    width: 50px;
-    height: 50px;
+.producto img {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    margin-right: 10px;
-}
-
-.producto-carrito h3 {
-    font-size: 18px;
-    margin: 0;
-}
-
-.producto-carrito p {
-    margin: 0;
-}
-
-#resumen-carrito {
-    padding: 10px;
-    background-color: #8eabc9;
-    margin-top: 20px;
     border-radius: 5px;
+    margin-right: 20px;
 }
 
-#resumen-carrito p {
-    font-size: 16px;
-    font-weight: bold;
+.producto h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+.precio {
+    font-size: 1rem;
+    color: #555;
+}
+
+.acciones-carrito {
+    display: flex;
+    gap: 10px;
+}
+
+.acciones-carrito button {
+    padding: 8px 16px;
     border: none;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
-    font-size: 16px;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
-button:hover {
+.acciones-carrito button:hover {
     background-color: #0056b3;
 }
 
+/* Estilos para el resumen del carrito */
+#resumen-carrito {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#resumen-carrito p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+
+
+/* Estilo para el carrito vacío */
+#lista-carrito p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+}
 
 .titulo_conocenos {
     text-align: center; /* Centramos el texto */
