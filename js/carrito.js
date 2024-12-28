@@ -78,3 +78,9 @@ export const realizarCompra = () => {
 
 // Inicializa el carrito al cargar la página
 document.addEventListener("DOMContentLoaded", mostrarCarrito);
+
+window.realizarCompra = realizarCompra;
+window.aumentarCantidad = aumentarCantidad;
+window.disminuirCantidad = disminuirCantidad;
+window.eliminarDelCarrito = eliminarDelCarrito;
+
