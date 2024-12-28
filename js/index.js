@@ -10,7 +10,16 @@ document.addEventListener("DOMContentLoaded", () => {
 let carrito = [];
 
 const agregarAlcarrito = (name, price) => {
-    carrito.push({ name, price });
+ // ver si el producto ya esta en el carrito
+    const productoExistente = carrito.find(item => item.name === name && item.price === price);       
+    if (productoExistente) {
+       // si existe sumar 1
+    productoExistente.cantidad += 1;
+    } else {
+    // si no existe, agregarlo con una cantidad con numero 1
+     carrito.push({ name, price, cantidad: 1 });
+    }
+
     localStorage.setItem("carrito", JSON.stringify(carrito)); // Guardar carrito actualizado
 
     // actualizar el contador visual del carrito
